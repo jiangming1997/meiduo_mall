@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html class="root61">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        领券中心 </title>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <meta name="Keywords" content="优惠券,领券,京东JD.COM">
+    <meta name="description" content="京东JD.COM领券中心">
+    <link rel="icon" href="" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+
+
+    <!--,user/myjd/lib/1.0.0/widget/global/global.css-->
+    <link type="text/css" rel="stylesheet" href="/static/css/quan/service.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/quan/quan-gifts.css">
+    <link charset="utf-8" rel="stylesheet" href="/static/css/quan/tips.css">
+
+    <script type="text/javascript" src="/static/js/host.js"></script>
+
+	<script type="text/javascript" src="/static/js/vue-2.5.16.js"></script>
+    <script type="text/javascript" src="/static/js/axios-0.18.0.min.js"></script>
+{#    <script type="text/javascript" src="/static/js/quan/coupon.js"></script>#}
+    <script type="text/javascript">
+        window.pageConfig = {
+            compatible: true,
+            gridWideClass: 'root61',
+            jdfVersion: '2.0.0'
+        };
+    </script>
+{##}
+    <link source="widget" type="text/css" rel="stylesheet" href="/static/css/quan/quan-index.css">
+    <script type="text/javascript">
+        var category = {
+            id: '0',
+            nextId: '81',
+            name: '精选'
+        };
+    </script>
+</head>
+
+<body>
+
+<!--shortcut start-->
+<div id="shortcut-2014">
+    <div class="w">
+        <ul class="fl">
+            <li id="ttbar-home"><i class="iconfont">&#xe608;</i><a href="/" target="_blank">美多商城首页</a></li>
+            <li class="dorpdown" id="ttbar-mycity"></li>
+        </ul>
+        <div class="fr">
+            <div class="login_btn fl">
+                欢迎您：<em>kunkunkun</em> <span>|</span> <a href="/logout/" class="quit">退出</a></div>
+            <div class="user_link fl"><span>|</span> <a href="/info/">用户中心</a> <span>|</span> <a
+                    href="/carts/">我的购物车</a> <span>|</span> <a href="/orders/info/1/">我的订单</a> <span>|</span> <a
+                    href="/coupon/">优惠券</a></div>
+        </div>
+        <span class="clr"></span>
+    </div>
+</div>
+<div id="o-header-2013">
+    <div id="header-2013" style="display:none;"></div>
+</div>
+<!--shortcut end-->
+<div id="o-header-2013">
+    <div id="header-2013" style="display:none;"></div>
+</div>
+<div class="w">
+    <a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
+    <div id="search-2014">
+        <ul id="shelper" class="hide"></ul>
+    </div>
+    <div id="settleup-2014-quan" class="dorpdown ">
+        <div id="myquan">
+            <div class="quan-dropdown">
+                <div class="dt">
+                    <s></s>
+                    <span class="txt">我的优惠券</span>
+                    <b></b>
+                </div>
+
+                <div class="dd">
+                    <div class="spacer"></div>
+                    <ul class="quantarget">
+                        <li class="">
+                            <a id="openSpecials" href="/specials.html" clstag="pageclick|keycount|aladdin_201605165|20">
+                                <span class="txt">专属优惠券</span>
+                                <span class="num unread"><em>0</em>未领</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="openGift" href="javascript:void(0);"
+                               clstag="pageclick|keycount|aladdin_201605165|21">
+                                <span class="txt">我的优惠券礼包</span>
+                                <span class="num unread"><em>0</em>未领</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a target="_blank" href="//quan.jd.com/" clstag="pageclick|keycount|aladdin_201605165|22">
+                                <span class="txt">我的优惠券</span>
+                                <span class="num"><span class="uc-num">0</span>张可用</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotwords-2014"></div>
+    <span class="clr"></span>
+</div>
+<div id="nav-2014">
+    <div class="w">
+        <div id="ceilinglamp">
+            <div id="navitems-2014">
+            </div>
+            <div id="treasure">
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">(function () {
+    if (pageConfig.navId) {
+        var object = document.getElementById('nav-' + pageConfig.navId);
+        if (object)
+            object.className += ' curr';
+    }
+}());</script>
+
+<div class="main">
+    <!-- widget quan-index begin -->
+    <div class="quan-h-wrap">
+        <div class="quan-h-top" style="display: block;">
+            <div class="w top-wrap">
+                <div class="top-lcol quan-loading" id="welfare">
+                    <div id="focus" class="mod">
+                        <div class="s-item-list"><a class="s-item s-selected">0</a></div>
+                        <ul class="s-panel-main" style="position: relative;">
+                            <li class="s-panel ui-switchable-panel-selected"
+                                style="position: absolute; z-index: 1; opacity: 1;"><a href="/" target="_blank"><img
+                                    src="/static/images/quan/371fcad2d783e8ca.jpg" width="719" height="350" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-rcol" id="marketcoupons">
+                    <div class="mod">
+                        <div class="mc r-cont">
+                            <div class="visually-hidden" tabindex="0"><h3>券集市</h3></div>
+                            <div class="hint">进来淘一张好券</div>
+                            <div class="cont" clstag="pageclick|keycount|201709195|25">
+                                <ul>
+                                    <div class="quan-item">
+                                        <div class="q-price"><em>¥</em><strong>100</strong><span class="q-limit">满2000可用</span>
+                                            </div>
+                                            <div class="q-range">
+                                                <div class="txt">全场通用，瞧一瞧，看一看，买不了吃亏，买不了上当</div>
+                                            </div>
+                                            <div class="q-opbtns"><span class="btn"><b></b>
+                                                <a @click="txt" class="txt" id="txt">领取</a></span></div>
+                                        </div>
+
+                                    </a>
+                                    <li><a href="">
+
+
+                                        <div class="quan-item">
+                                            <div class="q-price"><em>¥</em><strong>1</strong><span class="q-limit">满500可用</span>
+                                            </div>
+                                            <div class="q-range">
+                                                <div class="txt">一块钱也领？用不了，别看了，点第一张去</div>
+                                            </div>
+                                            <div class="q-opbtns"><span class="btn"><b></b><span
+                                                    class="txt">别点</span></span></div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="" target="_blank">
+                                        <div class="quan-item">
+                                            <div class="q-price"><em>¥</em><strong>30</strong><span class="q-limit">满99可用</span>
+                                            </div>
+                                            <div class="q-range">
+                                                <div class="txt">优惠券只有第一张可以用，不性感，也不会在线发牌，别搞我</div>
+                                            </div>
+                                            <div class="q-opbtns"><span class="btn"><b></b><span class="txt">看什么看</span></span>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="quan-h-cate">
+                <div class="cate-heading">
+                    <span class="i1"></span>
+                    <h3>精选好券</h3>
+                    <span class="i1"></span>
+                </div>
+                <div class="cate-cont" id="quanlist">
+                    <div class="quan-item quan-item02 quan-type05 item-235021222 quan-item-unload"
+                         data-key="f0fb7f4c6f9d4574b7ea3aa81cb1bd30">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="/static/images/quan/98da38e030113357.jpg"></div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>10</strong><span class="q-limit"
+                                                                                     data-tips="">满200可用</span></div>
+                            <div class="q-range"><span title="全品类通用券（除特殊商品）【14/15/16/17点限量抢】">全品类通用券（除特殊商品）【14/15/16/17点限量抢】</span>
+                            </div>
+                            <div class="q-progress"><span class="txt">今日已抢光</span></div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|29"><a href="//what.jd.com/"
+                                                                                              class="btn"
+                                                                                              target="_blank"><b></b><span
+                                    class="txt">进场看看</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-236575838 quan-item-unload"
+                         data-key="c6ef648dee78444b963d021c59659d95">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="/static/images/quan/5ae02410Ne0854007.jpg"></div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>60</strong><span class="q-limit"
+                                                                                     data-tips="">满399可用</span></div>
+                            <div class="q-range"><span title="仅可购买五粮液系列酒部分商品">仅可购买五粮液系列酒部分商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢68%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:68%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="d08e38725360ba2adb7a885d480c60afe751d20950e5b8e61b8ab0d559b291c35640d7671e2b6ec4483362aeca156cc7"
+                                                                                              data-batch="236575838"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=236575838"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=236575838" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-236575798 quan-item-unload"
+                         data-key="b866ec93a4de450aa3a5e8cdd301825d">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="/static/images/quan/5bc5a648N0671d68d.jpg"></div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><strong>5</strong><span class="zh-txt">折</span><span class="q-limit"
+                                                                                                       data-tips="满50享5折，最多减￥5000元">满50可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买富安娜家纺指定商品">仅可购买富安娜家纺指定商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢4%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:4%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="515b83485aa27d0af15c2085ea24c23672ec1f8edc8203376770f0f5a5071d1c64020d4ef4b8f07352c1a85c319837b4"
+                                                                                              data-batch="236575798"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=236575798"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=236575798" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-233227714 quan-item-unload"
+                         data-key="2809974f6e9c4edfac7096bff9ff6777">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t28945/56/176394458/167029/687efc98/5bea335cN6d26fe32.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>100</strong><span class="q-limit" data-tips="">满1990可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买潮宏基京东自营旗舰店商品">仅可购买潮宏基京东自营旗舰店商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢25%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:25%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="b31f68dc54ecb47be27123076db04d9e9afdb9ddac63ebf08b10c219f262ddf463c2de71e6fdd5bc7a73f376d7d8f009"
+                                                                                              data-batch="233227714"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=233227714"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=233227714" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-236575666 quan-item-unload"
+                         data-key="9f2153a6afab4b17b203b7ea22746186">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t19591/23/1597154242/421434/50d78fd7/5ad050faN31aa04b3.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>200</strong><span class="q-limit" data-tips="">满299可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买个人护理部分商品">仅可购买个人护理部分商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢56%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:56%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="20b718b43f4b64a31adec3223a8148836a89524ff5c6e40a37362feae27b7aa1ef206ac25c8f755fe14b08b815ca74da"
+                                                                                              data-batch="236575666"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=236575666"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=236575666" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-235131274 quan-item-unload"
+                         data-key="a8e309f3e2214ad594ff8803ab69ee0a">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t19591/23/1597154242/421434/50d78fd7/5ad050faN31aa04b3.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>100</strong><span class="q-limit" data-tips="">满119可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买个人护理部分商品">仅可购买个人护理部分商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢76%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:76%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="8629be9ebbfe5c3f8445f53db9631f5cf776007d1d25fd4f15e627a63f75707ae13055a0f7cad2e7134a8bdcb7f55678"
+                                                                                              data-batch="235131274"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=235131274"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=235131274" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-203375146 quan-item-unload"
+                         data-key="ffffa0c0df114db58f1f0c2b84eb9682">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t1/74274/16/2371/233375/5d099429E25d545c3/162fbb8724aa6590.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>20</strong><span class="q-limit"
+                                                                                     data-tips="">满99可用</span></div>
+                            <div class="q-range"><span title="仅可购买惠普自营笔记本指定商品">仅可购买惠普自营笔记本指定商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢62%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:62%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="db3f3cbd31d884cf99eba27ebee9ad9bf33da3f6ec5d27ef412f3bd9af685474a89ccde3c21ccf781733acd244ae8520"
+                                                                                              data-batch="203375146"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=203375146"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=203375146" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-235131298 quan-item-unload"
+                         data-key="dd5dbe110e9a4bc39e319ceab6af185b">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t1/58312/13/3231/191641/5d11e0d6E3e173143/73c81d47fa531a6e.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><strong>5</strong><span class="zh-txt">折</span><span class="q-limit"
+                                                                                                       data-tips="满50享5折，最多减￥5000元">满50可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买LOVO家纺指定商品">仅可购买LOVO家纺指定商品</span></div>
+                            <div class="q-progress" style="display: none;"><span class="txt">已抢42%</span><span
+                                    class="progress-wrap"><span class="progress-bg"></span><span class="progress"
+                                                                                                 style="width:42%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box" style="display: none;">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="300de7b3d2a1ee4d538825e09cb90d1abc1f9553855d4c714b6ef57a5cd60b96f00366908b38a3e8415ab0d7fdcc798f"
+                                                                                              data-batch="235131298"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=235131298"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide" style="display: block;">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=235131298" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide" style="display: block;">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-236462554 quan-item-unload"
+                         data-key="67d9105e50bb45b28b15dc967caa69b0">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t27382/185/1816069237/402182/822addde/5bee9f0eN2fa47127.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>100</strong><span class="q-limit" data-tips="">满1000可用</span>
+                            </div>
+                            <div class="q-range"><span title="仅可购买电脑数码部分店铺指定商品">仅可购买电脑数码部分店铺指定商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢32%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:32%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="9aad1122433c5e7c4b5dcf97fb7b205355b4d9b037dab5717b68390df888e10c8a365c781d3791aa4740d6ec9c68adf3"
+                                                                                              data-batch="236462554"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=236462554"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=236462554" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type05 item-117746211 quan-item-unload"
+                         data-key="1680d813d3aa42ca891fc071ba75bed4">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t11440/232/2849716739/168395/8135ca94/5cdb70daNaea057e1.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>300</strong><span class="q-limit" data-tips="">满1548可用</span>
+                            </div>
+                            <div class="q-range"><span title="好学童家具旗舰店">好学童家具旗舰店</span></div>
+                            <div class="q-progress"><span class="txt">今日已抢光</span></div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|29"><a
+                                    href="//mall.jd.com/index-581390.html" class="btn" target="_blank"><b></b><span
+                                    class="txt">进场看看</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-118746775 quan-item-unload"
+                         data-key="3fb3ea7a842f40d7be21eec6e9159df7">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t1/76497/25/702/69599/5ceea034E19198c65/a883bd881602cbc1.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>100</strong></div>
+                            <div class="q-range"><span title="OPPO官方直营旗舰店">OPPO官方直营旗舰店</span></div>
+                            <div class="q-progress"><span class="txt">已抢72%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:72%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="89709eb30ecfaf9315b6a234c8f03c1abac3d62589114b1f97915d727e3be4a046dad1a36af182f5155898cc66ebea9b"
+                                                                                              data-batch="118746775"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=118746775"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=118746775" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-238889402 quan-item-unload"
+                         data-key="7393c5821e55427cac023019350f49ea">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t17710/206/1799039143/114827/52638652/5ad95797N696d44a3.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>9</strong><span class="q-limit"
+                                                                                    data-tips="">满699可用</span></div>
+                            <div class="q-range"><span title="仅可购买国内机票部分商品">仅可购买国内机票部分商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢78%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:78%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="edae38aea61d9e1686b103c209aeb0d24d5a0ba145f0326a647379af79778d2600b355be25c1fc103db04523aedcdf0b"
+                                                                                              data-batch="238889402"
+                                                                                              data-type="1"
+                                                                                              data-url="//jipiao.jd.com/"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a href="//jipiao.jd.com/"
+                                                                                              target="_blank"
+                                                                                              class="btn"><b></b><span
+                                    class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                    <div class="quan-item quan-item02 quan-type01 item-233064970 quan-item-unload"
+                         data-key="941563ccfb0e4e0da33350cd8091817d">
+                        <div class="q-img"><img data-lazy-img="done" width="100" height="100" alt="" class="err-product"
+                                                src="//img10.360buyimg.com/N7/s100x100_jfs/t1/28993/34/15458/57991/5caf127bE3ff7951e/64993810ee2c420b.jpg">
+                        </div>
+                        <div class="q-type" tabindex="0">
+                            <div class="q-price "><em>¥</em><strong>5</strong><span class="q-limit"
+                                                                                    data-tips="">满99可用</span></div>
+                            <div class="q-range"><span title="仅可购买自营图书部分商品">仅可购买自营图书部分商品</span></div>
+                            <div class="q-progress"><span class="txt">已抢11%</span><span class="progress-wrap"><span
+                                    class="progress-bg"></span><span class="progress" style="width:11%"></span></span>
+                            </div>
+                        </div>
+                        <div class="q-circle"><i class="i1"></i><i class="i2"></i></div>
+                        <div class="q-ops-box">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|27"><a href="javascript:;"
+                                                                                              class="btn btn-def"
+                                                                                              rel="20f3f27a5d9da94bdee116a08108e0fe1a8d51022253616e3464e800a40c655bc374650f1fdb30b83412beb6de447d3c"
+                                                                                              data-batch="233064970"
+                                                                                              data-type="1"
+                                                                                              data-url="//search.jd.com/Search?coupon_batch=233064970"
+                                                                                              role="button"
+                                                                                              tabindex="0"><b></b><span
+                                    class="txt">立即领取</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-opbtns" clstag="pageclick|keycount|201709195|28"><a
+                                    href="//search.jd.com/Search?coupon_batch=233064970" target="_blank"
+                                    class="btn"><b></b><span class="txt">立即使用</span></a></div>
+                        </div>
+                        <div class="q-ops-jump hide">
+                            <div class="q-site geted-site"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cate-end"><a href="?cateId=81" class="next-cate-btn"
+                                         clstag="pageclick|keycount|201709195|31"><i class="i1"></i><span class="txt">点击查看下一个分类</span><i
+                        class="i2"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="quan-h-wrap">
+        <div class="quan-h-top">
+            <div class="w top-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="w">
+        <div class="quan-h-cate">
+            <div class="cate-heading">
+                <span class="i1"></span>
+                <h3></h3>
+                <span class="i1"></span>
+            </div>
+            <div class="cate-cont quan-loading" id="quanlist">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui-slidebar-new">
+    <ul>
+        <li class="ui-slidebar-handler quan-slidebar">
+            <a href="/" class="q-txt" target="_blank"><i class="q-ico"></i></a>
+            <a href="//quan.jd.com/" class="q-num" target="_blank"><span class="num"><span
+                    id="mycoupon"> +99</span><s></s></span></a>
+        </li>
+        <li class="ui-slidebar-handler task-slidebar">
+            <a href="/" class="task" target="_blank" clstag="pageclick|keycount|201709195|23">任务</a>
+        </li>
+        <li class="ui-slidebar-handler top-slidebar">
+            <a href="#" class="top" aria-label="返回顶部" role="presentation"><i class="top-ico"></i></a>
+        </li>
+        <li class="ui-slidebar-handler mobile-slidebar">
+
+            <div class="er-qc">
+                <div class="er-qc-panel">
+                    <img src="//img20.360buyimg.com/uba/s85x85_jfs/t11317/166/2125254007/2529/d78f2624/5a13e2edNd03ac333.png"
+                         alt="">
+                </div>
+                <a class="sk_mod_er_mobile_close" href="javascript:;" clstag="channel|keycount|1418|ELR_MBC"
+                   aria-label="关闭">
+                </a>
+                <s></s>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<!-- widget quan-index end -->
+</div>
+
+<!--service start-->
+{#<script type="text/javascript" src="/static/js/quan/base.js"></script>#}
+
+{#<script type="text/javascript" src="/static/js/quan/jquery-1.6.4.js"></script>#}
+{#<script source="widget" type="text/javascript" src="/static/js/quan/quan-index.js"></script>#}
+{#<script type="text/javascript" src="/static/js/quan/aladdin.js?v=20161118"></script>#}
+{#<script type="text/javascript" src="/static/js/quan/gift.js?v=20160630"></script>#}
+{#<script type="text/javascript" src="/static/js/quan/search.js?v=20160630"></script>#}
+{#<script type="text/javascript" src="/static/js/quan/es5-sham.min.js"></script>#}
+{#<script type="text/javascript" src="/static/js/quan/wl.js"></script>#}
+{#<script type="text/javascript" src="/static/js/vue-2.5.16.js"></script>#}
+<!--service end-->
+<!--footer start-->
+<div class="footer">
+    <div class="foot_link"><a href="#">关于我们</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">招聘人才</a>
+        <span>|</span> <a href="#">友情链接</a></div>
+    <p>CopyRight © 2016 北京美多商业股份有限公司 All Rights Reserved</p>
+    <p>电话：010-****888 京ICP备*******8号</p></div>
+
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <script type="text/javascript" src="/static/js/quan/coupon.js"></script>
+
+</body>
+
+
+</html>
