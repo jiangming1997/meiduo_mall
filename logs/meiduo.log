@@ -95,3 +95,119 @@ INFO 2019-07-09 16:00:33,672 basehttp 124 "GET /static/images/icons.png HTTP/1.1
 INFO 2019-07-09 16:00:34,043 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
 WARNING 2019-07-09 16:00:34,158 base 152 Not Found: /favicon.ico
 WARNING 2019-07-09 16:00:34,159 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 10575
+INFO 2019-07-09 17:04:18,334 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+ERROR 2019-07-09 17:04:18,358 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:04:18,395 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:04:29,861 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:04:29,929 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:04:33,274 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:04:33,310 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:05:25,241 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:05:25,278 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:05:32,542 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:05:32,579 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:05:36,472 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:05:36,511 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:07:09,195 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:07:09,233 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:07:14,062 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:07:14,128 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:07:20,462 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:07:20,500 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:12:09,657 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:12:09,697 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:12:15,855 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:12:15,920 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:12:33,666 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:12:33,700 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+INFO 2019-07-09 17:12:46,976 basehttp 124 "GET / HTTP/1.1" 200 124652
+INFO 2019-07-09 17:12:47,541 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2019-07-09 17:12:49,940 basehttp 124 "GET /info/ HTTP/1.1" 302 0
+INFO 2019-07-09 17:12:49,954 basehttp 124 "GET /login/?next=/info/ HTTP/1.1" 200 3482
+INFO 2019-07-09 17:12:49,981 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-07-09 17:12:49,982 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 2172
+INFO 2019-07-09 17:12:49,999 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-07-09 17:12:50,019 basehttp 124 "GET /static/images/QQ-WEIBO.png HTTP/1.1" 200 4298
+INFO 2019-07-09 17:12:50,020 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2019-07-09 17:12:53,854 basehttp 124 "POST /login/?next=/info/ HTTP/1.1" 302 0
+INFO 2019-07-09 17:12:53,880 basehttp 124 "GET /info/ HTTP/1.1" 200 6281
+INFO 2019-07-09 17:12:53,898 basehttp 124 "GET /static/js/user_center_info.js HTTP/1.1" 200 4178
+INFO 2019-07-09 17:12:53,912 basehttp 124 "GET /static/images/left_bg.jpg HTTP/1.1" 200 1367
+INFO 2019-07-09 17:12:53,913 basehttp 124 "GET /static/images/shop_cart.png HTTP/1.1" 200 1317
+INFO 2019-07-09 17:12:54,028 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1333
+INFO 2019-07-09 17:12:55,979 basehttp 124 "GET /password/ HTTP/1.1" 200 5345
+INFO 2019-07-09 17:12:56,000 basehttp 124 "GET /static/js/user_center_pass.js HTTP/1.1" 200 1493
+INFO 2019-07-09 17:13:14,812 basehttp 124 "POST /password/ HTTP/1.1" 200 5460
+ERROR 2019-07-09 17:13:46,606 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:13:46,644 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:13:55,636 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:13:55,674 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+INFO 2019-07-09 17:15:27,707 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+ERROR 2019-07-09 17:15:27,713 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:15:27,751 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:15:43,127 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:15:43,164 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:15:51,017 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:15:51,051 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 69089
+ERROR 2019-07-09 17:16:00,443 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:16:00,488 basehttp 124 "GET / HTTP/1.1" 400 69236
+ERROR 2019-07-09 17:16:00,991 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-07-09 17:16:01,026 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69281
+INFO 2019-07-09 17:16:11,104 basehttp 124 "GET / HTTP/1.1" 200 124652
+INFO 2019-07-09 17:16:16,131 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2019-07-09 17:16:18,945 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-07-09 17:16:18,954 basehttp 124 "GET /login/ HTTP/1.1" 200 3482
+INFO 2019-07-09 17:16:23,375 basehttp 124 "GET /find_password HTTP/1.1" 301 0
+INFO 2019-07-09 17:16:23,384 basehttp 124 "GET /find_password/ HTTP/1.1" 200 4737
+INFO 2019-07-09 17:16:23,407 basehttp 124 "GET /static/js/base.js HTTP/1.1" 200 1016
+INFO 2019-07-09 17:16:23,408 basehttp 124 "GET /static/js/find_password.js HTTP/1.1" 200 9289
+INFO 2019-07-09 17:16:23,422 basehttp 124 "GET /static/images/unsubscribe.png HTTP/1.1" 200 16378
+INFO 2019-07-09 17:16:23,501 basehttp 124 "GET /image_codes/a2dfc576-d502-4d1d-9566-80be601a7e72/ HTTP/1.1" 200 3408
+INFO 2019-07-09 17:16:34,412 basehttp 124 "GET /accounts/kunkunkun/sms/token/?text=uyqf&image_code_id=a2dfc576-d502-4d1d-9566-80be601a7e72 HTTP/1.1" 200 53
+INFO 2019-07-09 17:16:36,373 views 167 441244
+INFO 2019-07-09 17:16:36,436 basehttp 124 "GET /sms_codes/?access_token=gANLBC4= HTTP/1.1" 200 81
+INFO 2019-07-09 17:16:43,583 basehttp 124 "GET /accounts/kunkunkun/password/token/?sms_code=441244 HTTP/1.1" 200 62
+INFO 2019-07-09 17:16:49,651 basehttp 124 "POST /users/4/password/ HTTP/1.1" 200 47
+INFO 2019-07-09 17:16:49,672 basehttp 124 "GET /login/ HTTP/1.1" 200 3482
+INFO 2019-07-09 17:16:53,239 basehttp 124 "POST /login/ HTTP/1.1" 200 3589
+INFO 2019-07-09 17:16:58,096 basehttp 124 "POST /login/ HTTP/1.1" 200 3589
+INFO 2019-07-09 17:17:02,145 basehttp 124 "POST /login/ HTTP/1.1" 200 3589
+WARNING 2019-07-09 17:18:03,631 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 67
+WARNING 2019-07-09 17:18:50,165 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 67
+WARNING 2019-07-09 17:18:53,470 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 67
+WARNING 2019-07-09 17:23:02,476 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 50
+WARNING 2019-07-09 17:23:17,599 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 50
+INFO 2019-07-09 17:26:07,585 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:14,009 basehttp 124 "GET /find_password/ HTTP/1.1" 200 4737
+INFO 2019-07-09 17:29:14,123 basehttp 124 "GET /image_codes/ba7483e3-e23f-4e45-bddb-de866c405691/ HTTP/1.1" 200 3451
+INFO 2019-07-09 17:29:22,450 basehttp 124 "GET /accounts/kunkunkun/sms/token/?text=ads6&image_code_id=ba7483e3-e23f-4e45-bddb-de866c405691 HTTP/1.1" 200 53
+INFO 2019-07-09 17:29:23,641 views 167 630709
+INFO 2019-07-09 17:29:23,708 basehttp 124 "GET /sms_codes/?access_token=gANLBC4= HTTP/1.1" 200 81
+INFO 2019-07-09 17:29:30,417 basehttp 124 "GET /accounts/kunkunkun/password/token/?sms_code=630709 HTTP/1.1" 200 62
+INFO 2019-07-09 17:29:36,356 basehttp 124 "POST /users/4/password/ HTTP/1.1" 200 47
+INFO 2019-07-09 17:29:36,385 basehttp 124 "GET /login/ HTTP/1.1" 200 3482
+INFO 2019-07-09 17:29:45,826 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 214
+INFO 2019-07-09 17:29:45,996 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,000 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,002 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,009 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,009 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,012 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,014 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-07-09 17:29:46,015 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2019-07-09 17:29:46,082 base 152 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2019-07-09 17:29:46,085 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-07-09 17:29:46,089 base 152 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2019-07-09 17:29:46,101 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-07-09 17:29:46,101 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 10825
+WARNING 2019-07-09 17:29:46,101 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 10822
+WARNING 2019-07-09 17:29:46,113 base 152 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2019-07-09 17:29:46,114 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 10831
+WARNING 2019-07-09 17:29:46,114 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 10822
+WARNING 2019-07-09 17:29:46,125 base 152 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2019-07-09 17:29:46,135 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-07-09 17:29:46,148 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-07-09 17:29:46,149 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 10837
+WARNING 2019-07-09 17:29:46,151 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 10837
+WARNING 2019-07-09 17:29:46,152 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 10822
+WARNING 2019-07-09 17:29:46,153 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 10822
