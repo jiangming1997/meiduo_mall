@@ -80,3 +80,18 @@ INFO 2019-07-03 16:17:23,252 basehttp 124 "GET /static/js/base.js HTTP/1.1" 304 
 INFO 2019-07-03 16:17:23,262 basehttp 124 "GET /static/js/place_order.js HTTP/1.1" 304 0
 INFO 2019-07-03 16:17:23,276 basehttp 124 "GET /static/images/pay_icons.png HTTP/1.1" 304 0
 INFO 2019-07-03 16:17:23,277 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 304 0
+INFO 2019-07-09 16:00:33,495 basehttp 124 "GET / HTTP/1.1" 200 124652
+INFO 2019-07-09 16:00:33,519 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-07-09 16:00:33,524 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2019-07-09 16:00:33,525 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39760
+INFO 2019-07-09 16:00:33,529 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2019-07-09 16:00:33,533 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-07-09 16:00:33,535 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2019-07-09 16:00:33,537 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289318
+INFO 2019-07-09 16:00:33,561 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2019-07-09 16:00:33,562 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-07-09 16:00:33,607 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1388
+INFO 2019-07-09 16:00:33,672 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2019-07-09 16:00:34,043 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
+WARNING 2019-07-09 16:00:34,158 base 152 Not Found: /favicon.ico
+WARNING 2019-07-09 16:00:34,159 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 10575
