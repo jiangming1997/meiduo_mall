@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="feb2187a-54ae-4f01-9dc7-57cb18f1d7ff" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../DFR_django/Booktest/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ace2cee-5008-48ac-aec1-884c54aaae69.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +252,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17036000" />
+    <option name="totallyTimeSpent" value="17528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
