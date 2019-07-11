@@ -141,7 +141,7 @@ class DetailVisitView(View):
         counts_data.count += 1
         counts_data.save()
 
-        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK' })
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK'})
 
 
 class GoodsIntegral(View):

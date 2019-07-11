@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal">
-    <data-source name="@192.168.13.243" uuid="7ba41ac4-0501-4add-a9e4-8bd549e2f97e">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <introspection-schemas>*:@,meiduo_27</introspection-schemas>
-    </data-source>
-  </component>
-</project>

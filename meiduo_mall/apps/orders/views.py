@@ -16,6 +16,7 @@ from users.models import Address
 from .models import OrderGoods, OrderInfo
 from meiduo_mall.utils.response_code import RETCODE
 
+
 # logger = logging
 class OrderSettlementView(LoginRequiredView):
 
