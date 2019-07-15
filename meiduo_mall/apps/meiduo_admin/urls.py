@@ -1,7 +1,16 @@
 from django.conf.urls import url
+from rest_framework.routers import SimpleRouter
 
+from meiduo_admin.views.brand_views import *
+from meiduo_admin.views.channel_views import *
+from meiduo_admin.views.image_views import *
 from meiduo_admin.views.login_views import LoginView
 from meiduo_admin.views.home_views import *
+from meiduo_admin.views.option_views import *
+from meiduo_admin.views.spec_views import *
+from meiduo_admin.views.user_views import *
+from meiduo_admin.views.sku_Views import *
+from meiduo_admin.views.spu_views import *
 from .views.login_views import jwt_payload_handler
 from rest_framework_jwt.views import obtain_jwt_token
 
@@ -20,5 +29,79 @@ urlpatterns = [
     url(r'^statistical/month_increment/$', UserMonthCountView.as_view()),
     # 分类商品访问量
     url(r'^statistical/goods_day_views/$', GoodsDayView.as_view()),
+    # 用户管理
+    url(r'^users/$', UserView.as_view()),
+
+    # SKU
+    # 商品管理
+    url(r'^skus/$', SKUgoodsViewSet.as_view({'get': 'list', 'post': 'create'})),
+    # 商品单独查询、修改、删除
+    url(r'^skus/(?P<pk>\d+)/$', SKUgoodsViewSet.as_view({'get': 'retrieve',
+                                                         'put': 'update',
+                                                         'delete': 'destroy'})),
+    # 获取3级商品
+    url(r'^skus/categories/$', SKUgoodsViewSet.as_view({'get': 'categories'})),
+    # 获取商品信息
+    url(r'^goods/simple/$', SKUgoodsViewSet.as_view({'get': 'goodsimple'})),
+    # 获取商品规格信息
+    url(r'^goods/(?P<pk>\d+)/specs/$', SKUgoodsViewSet.as_view({'get': 'specs'})),
+
+    # SPU
+    # 显示全部商品
+    url(r'^goods/$', SPUViewSet.as_view({'get': 'list', 'post': 'create'})),
+    # 显示单独SPU、修改、删除
+    url(r'^goods/(?P<pk>\d+)/$', SPUViewSet.as_view({'get': 'retrieve',
+                                                     'put': 'update',
+                                                     'delete': 'destroy'})),
+    # 显示品牌
+    url(r'^goods/brands/simple/$', BrandView.as_view()),
+    # 显示一级分类
+    url(r'^goods/channel/categories/$', CategoryView.as_view()),
+    # 显示二三级分类
+    url(r'^goods/channel/categories/(?P<pk>\d+)/$', CategoryView.as_view()),
+
+    # 规格
+    url(r'^goods/specs/$', SpecsViewset.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^goods/specs/(?P<pk>\d+)/$', SpecsViewset.as_view({'get': 'retrieve',
+                                                             'put': 'update',
+                                                             'delete': 'destroy'})),
+
+    # 规格选项
+    url(r'^specs/options/$', OptionsViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^goods/specs/simple/$', OptionsepViewSet.as_view({'get': 'list'})),
+    url(r'^specs/options/(?P<pk>\d+)/$', OptionsViewSet.as_view({'get': 'retrieve',
+                                                                 'put': 'update',
+                                                                 'delete': 'destroy'})),
+
+    # 频道管理
+    url(r'^goods/channels/$', ChannelViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^goods/channels/(?P<pk>\d+)/$', ChannelViewSet.as_view({'get': 'retrieve',
+                                                                  'put': 'update',
+                                                                  'delete': 'destroy'})),
+    url(r'^goods/categories/$', CategoryView.as_view()),
+    url(r'^goods/channel_types/$', ChannelGroupView.as_view()),
+
+    # 品牌管理
+    url(r'^goods/brands/$', BrandViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^goods/brands/(?P<pk>\d+)/$', BrandViewSet.as_view({'get': 'retrieve',
+                                                              'put': 'update',
+                                                              'delete': 'destroy'})),
+
+
+
+
+    # 照片管理
+    url(r'^skus/images/$', ImageViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^skus/images/(?P<pk>\d+)/$', ImageViewSet.as_view({'get': 'retrieve',
+                                                            'put': 'update',
+                                                            'delete': 'destroy'})),
+    url(r'^skus/simple/$', SkuSimpleView.as_view()),
+
 
 ]
+
+# router = SimpleRouter()
+# # statistical/total_count/
+# router.register(prefix="specs", viewset=OptionsViewSet, base_name="opt")
+# router.register(prefix="goods/specs", viewset=OptionsViewSet, base_name="opt")
+# urlpatterns += router.urls

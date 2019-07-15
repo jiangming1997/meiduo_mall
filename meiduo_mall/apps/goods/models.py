@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Model
 
 from meiduo_mall.utils.models import BaseModel
 from users.models import User
