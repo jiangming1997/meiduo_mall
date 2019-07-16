@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Model
 
 from goods.models import SKU
 from meiduo_mall.utils.models import BaseModel

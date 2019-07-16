@@ -7,10 +7,12 @@ from meiduo_admin.views.image_views import *
 from meiduo_admin.views.login_views import LoginView
 from meiduo_admin.views.home_views import *
 from meiduo_admin.views.option_views import *
+from meiduo_admin.views.permission_views import *
 from meiduo_admin.views.spec_views import *
 from meiduo_admin.views.user_views import *
 from meiduo_admin.views.sku_Views import *
 from meiduo_admin.views.spu_views import *
+from meiduo_admin.views.orders_views import *
 from .views.login_views import jwt_payload_handler
 from rest_framework_jwt.views import obtain_jwt_token
 
@@ -96,6 +98,32 @@ urlpatterns = [
                                                             'put': 'update',
                                                             'delete': 'destroy'})),
     url(r'^skus/simple/$', SkuSimpleView.as_view()),
+
+    # 订单管理
+    url(r'^orders/$', OrdersViewSet.as_view({'get': 'list'})),
+    url(r'^orders/(?P<pk>\d+)/$', OrdersViewSet.as_view({'get': 'retrieve'})),
+    url(r'^orders/(?P<pk>\d+)/status/$', OrdersViewSet.as_view({'patch': 'partial_update'})),
+
+
+    # 权限管理
+    url(r'^permission/perms/$', PermissionViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^permission/content_types/$', PermissionViewSet.as_view({'get': 'content_type'})),
+    url(r'^permission/perms/(?P<pk>\d+)/$', PermissionViewSet.as_view({'delete': 'destroy'})),
+
+    # 用户组管理
+    url(r'^permission/groups/$', GroupViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^permission/groups/(?P<pk>\d+)/$', GroupViewSet.as_view({'get': 'retrieve',
+                                                                   'put': 'update',
+                                                                   'delete': 'destroy'})),
+    url(r'^permission/simple/$', GroupViewSet.as_view({'get': 'simple'})),
+
+
+    # 管理员管理
+    url(r'^permission/admins/$', AdminViewSet.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^permission/admins/(?P<pk>\d+)/$', AdminViewSet.as_view({'get': 'retrieve',
+                                                                   'put': 'update',
+                                                                   'delete': 'destroy'})),
+    url(r'^permission/groups/simple/$', AdminViewSet.as_view({'get': 'simple'})),
 
 
 ]
